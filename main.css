@@ -1,0 +1,205 @@
+/* font-family: 'Montserrat', sans-serif; */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ff4747;
+}
+
+/* basic */
+
+.container {
+    width: 100%;
+}
+
+/* header */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* logo */
+
+.logo {
+	width: 100%;
+	text-align: center;
+	position: relative;
+    top: 1.5em;
+    color: white;
+}
+
+.logo h1 {
+	font-weight: 900;
+	font-size: 2em;
+    letter-spacing: 1em;
+    margin-top: 0.5em;
+}
+
+.split {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1em;
+    margin-left: 100px;
+}
+
+/* nav */
+
+nav {
+	position: right;
+	display: block;
+	top: 2.5em;
+	top: 2.5em;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+
+nav ul {
+	display: inline-block;
+	padding: 1.5em;
+}
+
+nav ul li {
+	display: inline-block;
+	text-align: center;
+	padding: 0 1.5em;
+}
+
+nav ul li ul {
+	display: none;
+}
+
+nav ul li a {
+	display: block;
+	color: black;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 0.7em;
+	letter-spacing: 0.25em;
+	height: 5em;
+	line-height: 5em;
+	-moz-transition: all .25s ease-in-out;
+	-webkit-transition: all .25s ease-in-out;
+	-o-transition: all .25s ease-in-out;
+	-ms-transition: all .25s ease-in-out;
+	transition: all .25s ease-in-out;
+}
+
+nav ul li:hover a {
+	color: white;
+}
+
+nav ul li.active a {
+	color: white;
+}
+
+
+/* cards */
+
+.card {
+    width: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 4px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    background-color: #ff3300;
+    color: white;
+}
+
+.card h4 {
+    text-align: center;
+    background-color: #ff3300;
+    padding: 10px;
+    font-size: 1em;
+}
+
+.card p {
+    font-size: .6em;
+    padding: 10px;
+}
+
+/* section */
+
+.grid {
+    font-size: 40px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 20px;
+    grid-template-areas:
+        "image1 card1"
+        "card2 image2";
+}
+
+.img1 {
+    grid-area: image1;
+    margin: 50px 100px;
+}
+
+.img2 {
+    grid-area: image2;
+    margin: 50px 100px;
+}
+
+#card1 {
+    grid-area: card1;
+    margin: 50px 150px;
+}
+
+#card2 {
+    grid-area: card2;
+    margin: 50px 150px;
+}
+
+/* images */
+
+img {
+    height: 500px;
+    width: auto;
+}
