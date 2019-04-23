@@ -1,0 +1,264 @@
+/* font-family: 'Montserrat', sans-serif; 
+secondary color: #B23131
+main color: #ff4747*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ff4747;
+}
+
+/* basic */
+
+.container {
+		width: 100%;
+		justify-content: center;
+}
+
+/* header */
+
+header {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+
+/* logo */
+
+.logo {
+	width: 100%;
+	text-align: center;
+	position: center;
+    top: 1.5em;
+	color: white;
+	line-height: 3em;
+	padding-bottom: 4em;
+}
+
+.logo h1 {
+	font-weight: 1000;
+	font-size: 3em;
+    letter-spacing: .5em;
+    margin-top: 0.5em;
+}
+
+.split {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1em;
+}
+
+.logo p {
+	font-weight: 700;
+	color: whitesmoke
+}
+
+/* nav */
+
+nav {
+	position: center;
+	display: block;
+	top: 2.5em;
+	top: 2.5em;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+
+nav ul {
+	display: inline-block;
+	padding: 1.5em;
+}
+
+nav ul li {
+	display: inline-block;
+	text-align: center;
+	padding: 0 1.5em;
+}
+
+nav ul li a {
+	display: block;
+	color: black;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 0.7em;
+	letter-spacing: 0.25em;
+	height: 5em;
+	line-height: 5em;
+	-moz-transition: all .25s ease-in-out;
+	-webkit-transition: all .25s ease-in-out;
+	-o-transition: all .25s ease-in-out;
+	-ms-transition: all .25s ease-in-out;
+	transition: all .25s ease-in-out;
+}
+
+nav ul li:hover a {
+	color: white;
+}
+
+nav ul li.active a {
+	color: white;
+}
+
+
+/* tabs */
+
+.tab-section {
+	
+	justify-content: center;
+	/* border: 1px solid white; */
+}
+
+.tabs {
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	/* align-items: center; */
+}
+
+.tabs .tabs-items {
+	width: 100%;
+	height: 300px;
+	display: flex;
+	justify-self: center;
+	padding-top: 60px;
+}
+.tabs .tabs-item {
+	display: none; 
+	width: 75%;
+}
+.tabs .tabs-item-pic {
+	width: 60%;
+	height: auto;
+	padding-bottom: 10px;
+}
+.tabs-item-selected {
+	display: block;
+}
+
+.tabs-links {
+	display: flex;
+	position: center;
+	top: 2.5em;
+	top: 2.5em;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	margin: 0 23%;
+}
+
+.tabs-link {
+	padding: 20px 25px;
+	font-size: 24px;
+	background-color: transparent;
+	/* border-right: 1px solid white; */
+	color: white;
+	cursor: pointer;
+}
+
+.tabs-link:hover {
+	background-color: #B23131;
+	color: black;
+}
+
+.tabs-link-selected {
+	z-index: 2;
+	border-right: 1px solid black;
+	background-color: #B23131;
+	color: #B27231;
+}
+
+.tabs-link-selected:hover {
+	background-color: #B23131;
+	color: #B27231;
+}
+
+/* TEST */
+/* .toggle {
+	font-family: arial, sans-serif;
+  justify-self: center;
+  }
+  .toggle .tabs {
+	width: 100%;
+	overflow: hidden;
+	height: 36px;
+	line-height: 36px;
+  }
+  .toggle .tabs .tab {
+  float: left;
+	background: transparent;
+	color: white;
+	height: 31px;
+	margin: 2px 8px 0;
+	padding: 0 8px;
+	cursor: pointer;
+  }
+  .toggle .tabs .tab.active {
+	color: #dd4b39;
+	border-bottom: 3px solid #dd4b39;
+  }
+  .toggle .panels .panel {
+	padding: 20px 10px;
+	display: none;
+  }
+  .toggle .panels .panel:first-child {
+	display: block;
+  } */
+  
+
+/* footer */
+
+footer {
+	display: flex;
+	justify-content: center;
+	padding: 2em;
+}
+footer p {
+	font-weight: 600;
+}
+
+/* responsive */
+
