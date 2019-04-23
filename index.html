@@ -1,79 +1,84 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Trip-Split</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
-        <link rel="stylesheet" href="main.css"/>
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    </head>
+
+<head>
+    <title>Trip Split</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="main.css" />
+    
+</head>
+
 <body>
+        
+    <div class="container">
+        <header>
+            <!-- logo -->
+                <div class="main-container">
+                        <div class="first-container share">
+                            <h1><span id="one">T</span><span>r</span><span>i</span><span>p</span> <span>S</span><span>p</span><span>l</span><span>i</span><span>t</span></h1>
+                        </div>
+                    </div><!--logo-->
+            <nav>
+                <ul>
+                    <li><a href="#">Login / Sign Up</a></li>
+                    <li><a href="#">Meet the Team</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <header>
-        <div class="logo">
-            <h1>Trip <div class="split">Split</div></h1>
-            <br><p>Keep track of shared expenses</p>
-        </div> <!-- logo -->
+        <div class="tab-section">
+            <div class="tabs">
+                <div class="tabs-links">
+                    <div class="tabs-link tabs-link-selected" data-tab="1">Ridesharing</div>
+                    <div class="tabs-link" data-tab="2">Eating Out</div>
+                    <div class="tabs-link" data-tab="3">Vacations</div>
+                    <div class="tabs-link" data-tab="4">Live it Up</div>
+                </div>
 
-        <nav>
-            <ul>
-                <li><a href="#">Login/Sign Up</a></li>
-                <li><a href="about.html">About Us</a></li>
-            </ul>
-        </nav>
+                <div class="tabs-items">
 
-    </header>
-<div class="container">
-    <!-- carousel -->
+                    <div class="tabs-item tabs-item-selected" data-tab="1">
+                            <div class="tabs-item-description">
+                                <p>Split the fare with the people you ride with.</p>
+                        <div class="tabs-item-pic"><img src="images/car.svg" alt="" /></div>
+                        </div>
+                    </div>
 
-    <!-- carousel -->
+                    <div class="tabs-item" data-tab="2">
+                            <div class="tabs-item-description">
+                                    <p>Split the check with the people you eat with.</p>
+                        <div class="tabs-item-pic"><img src="images/eat.svg" alt="" /></div>
+                        </div>
+                    </div>
 
-    <div class="grid">
-        <div class="img1"><img src="images/iphone-banner.png" alt=""></div>
-        <div id="card1" class="card">
-            <h4>Lorem Ipsum</h4>
-            <hr>
-            <p>text text text text text text text text text text text text text text text text text text</p>
+                    <div class="tabs-item" data-tab="3">
+                            <div class="tabs-item-description">
+                                    <p>Split the hotel bill with the people you travel with.</p>
+                        <div class="tabs-item-pic"><img src="images/travel.svg" alt="" /></div>
+                        </div>
+                    </div>
+
+                    <div class="tabs-item" data-tab="4">
+                            <div class="tabs-item-description">
+                                    <p>Split the tab with the people you have fun with.</p>
+                        <div class="tabs-item-pic"><img src="images/party.svg" alt="" /></div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--tabs-items-->
+            </div>
+            <!--tabs-->
         </div>
-
-        <div class="img2"><img src="images/iphone-banner.png" alt=""></div>
-        <div id="card2" class="card">
-            <h4>Lorem Ipsum</h4>
-            <hr>
-            <p>text text text text text text text text text text text text text text text text text text</p>
-        </div>
+        <!--section-->
     </div>
+    <!--container-->
 
-    <section class="reviews">
-        <!-- card -->
-        <div class="card">
-                <h4>Lorem Ipsum</h4>
-                <hr>
-                <p>text text text text text text text text text text text text text text text text text text</p>
-                <p>--Name</p>
-            </div>
-        <!-- card -->
-        <div class="card">
-                <h4>Lorem Ipsum</h4>
-                <hr>
-                <p>text text text text text text text text text text text text text text text text text text</p>
-                <p>--Name</p>
-            </div>
-        <!-- card -->
-        <div class="card">
-                <h4>Lorem Ipsum</h4>
-                <hr>
-                <p>text text text text text text text text text text text text text text text text text text</p>
-                <p>--Name</p>
-            </div>
-    </section> <!-- reviews -->
 
-</div><!--container-->
     <footer>
-        <ul>
-            <li>&copy;Trip Split</li>
-        </ul>
+        <p>&copy;Trip Split</p>
     </footer>
-
-
+    </div>
+    <script src="./components/tabs.js"></script>
 </body>
 </html>

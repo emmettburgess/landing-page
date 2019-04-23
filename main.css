@@ -59,6 +59,10 @@ html {
 		justify-content: center;
 }
 
+@-ms-viewport {
+  width: device-width;
+}
+
 /* header */
 
 header {
@@ -369,4 +373,48 @@ footer p {
 }
 
 /* responsive */
+
+@media screen and (max-width: 1690px) {
+  .container {
+    width: 70em;
+  }
+}
+
+
+@media screen and (max-width: 1280px) {
+  .container {
+    width: calc(100%-100px);
+    padding: 4em 0 7em 0;
+  }
+  body {
+    font-size: 11pt;
+    line-height: 1.5em;
+    letter-spacing: 0.015em;
+  }
+  .logo {
+    margin-top: -0.5em;
+  }
+  .logo h1 {
+    font-size: 1.75em;
+  }
+  footer {
+    padding-top: 4em;
+    margin-top: 4em;
+  }
+}
+
+
+@media screen and (max-width: 980px) {
+  .container {
+    width: calc(100%-40px);
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .tab-section .tabs-item {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
