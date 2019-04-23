@@ -1,6 +1,7 @@
 /* font-family: 'Montserrat', sans-serif; 
 secondary color: #B23131
-main color: #ff4747*/
+main color: #ff4747
+third color: #47ffff*/
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -68,32 +69,154 @@ header {
 
 /* logo */
 
-.logo {
-	width: 100%;
-	text-align: center;
-	position: center;
-    top: 1.5em;
-	color: white;
-	line-height: 3em;
-	padding-bottom: 4em;
+.first-container, .second-container {
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 100px;
 }
 
-.logo h1 {
-	font-weight: 1000;
-	font-size: 3em;
-    letter-spacing: .5em;
-    margin-top: 0.5em;
+h1 {
+  position: relative;
+  letter-spacing: 2px;
+  font-size: 5vw;
 }
 
-.split {
-    display: flex;
-    flex-direction: column;
-    padding-top: 1em;
+.first-container {
+  margin-bottom: 15px;
 }
 
-.logo p {
-	font-weight: 700;
-	color: whitesmoke
+span {
+  display: inline-block;
+  position: relative;
+  margin-right: 5px;
+}
+span:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0;
+  top: 0;
+  left: 0;
+  transition: 0.6s;
+  z-index: -5;
+}
+
+.share:hover > h1 > span:nth-child(1):after {
+  background: #B23131;
+  width: 100%;
+  transition: 0.6s;
+  transition-delay: 100ms;
+  transform: rotate(-25deg);
+}
+.share:hover > h1 > span:nth-child(1):after, .share:hover > h1 > span:nth-child(1) {
+  color: #ff4747;
+  transition-delay: 110ms;
+}
+
+.share:hover > h1 > span:nth-child(2):after {
+  background: #B23131;
+  width: 100%;
+  transition: 0.6s;
+  transition-delay: 200ms;
+  transform: rotate(-20deg);
+}
+.share:hover > h1 > span:nth-child(2):after, .share:hover > h1 > span:nth-child(2) {
+  color: #ff4747;
+  transition-delay: 220ms;
+}
+
+.share:hover > h1 > span:nth-child(3):after {
+  background: #B23131;
+  width: 100%;
+  transition: 0.6s;
+  transition-delay: 300ms;
+  transform: rotate(-15deg);
+}
+.share:hover > h1 > span:nth-child(3):after, .share:hover > h1 > span:nth-child(3) {
+  color: #ff4747;
+  transition-delay: 330ms;
+}
+
+.share:hover > h1 > span:nth-child(4):after {
+  background: #B23131;
+  width: 100%;
+  transition: 0.6s;
+  transition-delay: 400ms;
+  transform: rotate(-10deg);
+}
+.share:hover > h1 > span:nth-child(4):after, .share:hover > h1 > span:nth-child(4) {
+  color: #ff4747;
+  transition-delay: 440ms;
+}
+
+.share:hover > h1 > span:nth-child(5):after {
+  background: #B23131;
+  width: 100%;
+  transition: 0.6s;
+  transition-delay: 500ms;
+  transform: rotate(-5deg);
+}
+.share:hover > h1 > span:nth-child(5):after, .share:hover > h1 > span:nth-child(5) {
+  color: #ff4747;
+  transition-delay: 550ms;
+}
+
+.share:hover > h1 > span:nth-child(6):after {
+  background: #B23131;
+  width: 100%;
+  transition: 0.6s;
+  transition-delay: 600ms;
+  transform: rotate(0deg);
+}
+.share:hover > h1 > span:nth-child(6):after, .share:hover > h1 > span:nth-child(6) {
+  color: #ff4747;
+  transition-delay: 660ms;
+}
+
+.share:hover > h1 > span:nth-child(7):after {
+  background: #B23131;
+  width: 100%;
+  transition: 0.6s;
+  transition-delay: 700ms;
+  transform: rotate(5deg);
+}
+.share:hover > h1 > span:nth-child(7):after, .share:hover > h1 > span:nth-child(7) {
+  color: #ff4747;
+  transition-delay: 770ms;
+}
+
+.share:hover > h1 > span:nth-child(8):after {
+  background: #B23131;
+  width: 100%;
+  transition: 0.6s;
+  transition-delay: 800ms;
+  transform: rotate(10deg);
+}
+.share:hover > h1 > span:nth-child(8):after, .share:hover > h1 > span:nth-child(8) {
+  color: #ff4747;
+  transition-delay: 880ms;
+}
+
+.share:hover > h1 > span:nth-child(9):after {
+  background: #B23131;
+  width: 100%;
+  transition: 0.6s;
+  transition-delay: 900ms;
+  transform: rotate(15deg);
+}
+.share:hover > h1 > span:nth-child(9):after, .share:hover > h1 > span:nth-child(9) {
+  color: #ff4747;
+  transition-delay: 990ms;
+}
+
+.share:hover > h1 > span:nth-child(10):after {
+  background: #B23131;
+  width: 100%;
+  transition: 0.6s;
+  transition-delay: 1000ms;
+  transform: rotate(20deg);
 }
 
 /* nav */
@@ -149,14 +272,12 @@ nav ul li.active a {
 .tab-section {
 	
 	justify-content: center;
-	/* border: 1px solid white; */
 }
 
 .tabs {
 	justify-content: center;
 	display: flex;
 	flex-direction: column;
-	/* align-items: center; */
 }
 
 .tabs .tabs-items {
@@ -177,9 +298,7 @@ nav ul li.active a {
 }
 
 img {
-	/* width: 60%; */
 	max-width: 800px;
-	/* height: auto; */
 	padding-bottom: 10px;
 	margin: 0 auto;
 	text-align: center;
@@ -187,11 +306,12 @@ img {
 
 .tabs-item-description {
 	margin: 0 auto;
+	font-size: 2em;
 }
 
 .tabs-item-description p {
 	margin: 0 auto;
-	color: white;
+	color: #47ffff;
 	text-align: center;
 }
 
@@ -223,19 +343,19 @@ img {
 
 .tabs-link:hover {
 	background-color: #B23131;
-	color: black;
+	color: #ff4747;
 }
 
 .tabs-link-selected {
 	z-index: 2;
 	background-color: #B23131;
-	color: #B27231;
+	color: #ff4747;
 }
 
-.tabs-link-selected:hover {
+/* .tabs-link-selected:hover {
 	background-color: #B23131;
-	color: #B27231;
-}
+	color: black;
+} */
 
 /* footer */
 
