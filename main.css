@@ -1,4 +1,6 @@
-/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Montserrat', sans-serif; 
+secondary color: #B23131
+main color: #ff4747*/
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -52,14 +54,15 @@ html {
 /* basic */
 
 .container {
-    width: 100%;
+		width: 100%;
+		justify-content: center;
 }
 
 /* header */
 
 header {
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
     justify-content: center;
 }
 
@@ -68,15 +71,17 @@ header {
 .logo {
 	width: 100%;
 	text-align: center;
-	position: relative;
+	position: center;
     top: 1.5em;
-    color: white;
+	color: white;
+	line-height: 3em;
+	padding-bottom: 4em;
 }
 
 .logo h1 {
-	font-weight: 900;
-	font-size: 2em;
-    letter-spacing: 1em;
+	font-weight: 1000;
+	font-size: 3em;
+    letter-spacing: .5em;
     margin-top: 0.5em;
 }
 
@@ -84,13 +89,17 @@ header {
     display: flex;
     flex-direction: column;
     padding-top: 1em;
-    margin-left: 100px;
+}
+
+.logo p {
+	font-weight: 700;
+	color: whitesmoke
 }
 
 /* nav */
 
 nav {
-	position: right;
+	position: center;
 	display: block;
 	top: 2.5em;
 	top: 2.5em;
@@ -108,10 +117,6 @@ nav ul li {
 	display: inline-block;
 	text-align: center;
 	padding: 0 1.5em;
-}
-
-nav ul li ul {
-	display: none;
 }
 
 nav ul li a {
@@ -139,67 +144,109 @@ nav ul li.active a {
 }
 
 
-/* cards */
+/* tabs */
 
-.card {
-    width: auto;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 4px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    background-color: #ff3300;
-    color: white;
+.tab-section {
+	
+	justify-content: center;
+	/* border: 1px solid white; */
 }
 
-.card h4 {
-    text-align: center;
-    background-color: #ff3300;
-    padding: 10px;
-    font-size: 1em;
+.tabs {
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	/* align-items: center; */
 }
 
-.card p {
-    font-size: .6em;
-    padding: 10px;
+.tabs .tabs-items {
+	width: 100%;
+	display: flex;
+	justify-self: center;
+	padding-top: 60px;
+}
+.tabs .tabs-item {
+	display: none; 
+	width: 75%;
 }
 
-/* section */
-
-.grid {
-    font-size: 40px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    grid-gap: 20px;
-    grid-template-areas:
-        "image1 card1"
-        "card2 image2";
+.tabs-item-pic {
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
 }
-
-.img1 {
-    grid-area: image1;
-    margin: 50px 100px;
-}
-
-.img2 {
-    grid-area: image2;
-    margin: 50px 100px;
-}
-
-#card1 {
-    grid-area: card1;
-    margin: 50px 150px;
-}
-
-#card2 {
-    grid-area: card2;
-    margin: 50px 150px;
-}
-
-/* images */
 
 img {
-    height: 500px;
-    width: auto;
+	/* width: 60%; */
+	max-width: 800px;
+	/* height: auto; */
+	padding-bottom: 10px;
+	margin: 0 auto;
+	text-align: center;
 }
+
+.tabs-item-description {
+	margin: 0 auto;
+}
+
+.tabs-item-description p {
+	margin: 0 auto;
+	color: white;
+	text-align: center;
+}
+
+.tabs-item {
+	margin: 0 auto;
+}
+
+.tabs .tabs-item-selected {
+	display: block;
+}
+
+.tabs-links {
+	justify-content: space-around;
+	display: flex;
+	position: center;
+	width: 100%;
+	max-width: 800px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.tabs-link {
+	padding: 20px 25px;
+	font-size: 24px;
+	background-color: transparent;
+	color: white;
+	cursor: pointer;
+}
+
+.tabs-link:hover {
+	background-color: #B23131;
+	color: black;
+}
+
+.tabs-link-selected {
+	z-index: 2;
+	background-color: #B23131;
+	color: #B27231;
+}
+
+.tabs-link-selected:hover {
+	background-color: #B23131;
+	color: #B27231;
+}
+
+/* footer */
+
+footer {
+	display: flex;
+	justify-content: center;
+	padding: 2em;
+}
+footer p {
+	font-weight: 600;
+}
+
+/* responsive */
+
