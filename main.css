@@ -270,7 +270,6 @@ nav ul li.active a {
 /* tabs */
 
 .tab-section {
-	
 	justify-content: center;
 }
 
@@ -294,6 +293,7 @@ nav ul li.active a {
 .tabs-item-description {
 	margin: 0 auto;
   height: 500px;
+  text-align: center;
   background-size: 500px auto;
   background-repeat: no-repeat;
   background-position: center;
@@ -305,6 +305,14 @@ nav ul li.active a {
   font-size: 2em;
 	color: #47ffff;
   text-align: center;
+}
+
+.tabs-item-description img {
+  height: 300px;
+  width: auto;
+  border: 5px solid #B23131;
+  border-radius: 2px;
+  margin: 5px 0;
 }
 
 .tabs-item {
