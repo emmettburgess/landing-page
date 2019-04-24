@@ -25,6 +25,17 @@ class TabLink {
 class TabItem {
   constructor(element) {
     this.element = element;
+    this.mobile = window.matchMedia("(max-width:500px)");
+    this.mobile.addListener(()=> this.resize());
+    // this.desktop = window.matchMedia("(max-width:750px)");
+    // this.desktop.addListener(() => this.select());
+  }
+
+  resize() {
+    const items = document.querySelectorAll('.tabs-item');
+    items.forEach( item => {
+      item.classList.add('tabs-item-selected');
+    })
   }
 
   select() {
@@ -34,7 +45,6 @@ class TabItem {
       item.classList.remove('tabs-item-selected');
     })
     this.element.classList.add('tabs-item-selected');
-    console.log(this.element);
   }
 }
 
