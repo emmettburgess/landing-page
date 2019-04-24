@@ -293,7 +293,7 @@ nav ul li.active a {
 }
 
 .tabs-item-description {
-	margin: 0 auto;
+	margin: 0 auto 20px;
   height: 500px;
   text-align: center;
   background-size: 500px auto;
@@ -309,7 +309,7 @@ nav ul li.active a {
   text-align: center;
 }
 
-.tabs-item-description img {
+.tabs-item-description .pic {
   height: 300px;
   width: auto;
   border: 5px solid #B23131;
