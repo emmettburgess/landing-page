@@ -287,7 +287,9 @@ nav ul li.active a {
 }
 .tabs .tabs-item {
 	display: none; 
-	width: 75%;
+  width: 75%;
+  margin: 0 auto;
+  height: 600px;
 }
 
 .tabs-item-description {
@@ -313,11 +315,6 @@ nav ul li.active a {
   border: 5px solid #B23131;
   border-radius: 2px;
   margin: 5px 0;
-}
-
-.tabs-item {
-  margin: 0 auto;
-  height: 600px;
 }
 
 .tabs .tabs-item-selected {
