@@ -314,8 +314,10 @@ nav ul li.active a {
   width: auto;
   border: 5px solid #B23131;
   border-radius: 2px;
-  margin: 5px 0;
+  margin: 5px 10px;
 }
+
+
 
 .tabs .tabs-item-selected {
 	display: block;
