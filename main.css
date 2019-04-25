@@ -377,36 +377,17 @@ footer p {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: auto;
+    height: 400px;
     background-size: 300px auto;
     margin: 0;
     padding: 0;
   }
-  .tabs-item-description img {
-    height: 150px;
-    width: auto;
-    margin: 50px;
-  }
-  .tabs-item-description .peter {
-    height: 300px;
-    width: auto;
-    margin: 50px;
-  }
-  .tabs-item-description .latwan {
-    height: 450px;
-    width: auto;
-    margin: 50px;
-  }
   .tabs-item-description p {
-    margin: 0;
+    margin: 0 auto;
     top: 0;
     font-size: 2em;
     color: white;
     text-align: center;
-  }
-  .tabs-item-description a {
-    margin-top: 7px;
-    margin-bottom: 50px;
   }
   .tabs .tabs-item {
     width: 100%;
