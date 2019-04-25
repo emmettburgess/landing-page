@@ -52,6 +52,11 @@ html {
     background-color: #ff4747;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 /* basic */
 
 .container {
@@ -360,12 +365,17 @@ footer p {
   font-weight: 600;
 }
 
-
+.display {
+  display: none;
+}
 /* responsive */
 
 @media (max-width: 500px) {
   .tabs-links {
     display: none;
+  }
+  .display {
+    display: block;
   }
   .tabs-items {
     display: flex;
@@ -390,6 +400,7 @@ footer p {
     text-align: center;
   }
   .tabs .tabs-item {
+    display: block;
     width: 100%;
     height: auto;
   }
@@ -398,6 +409,19 @@ footer p {
     margin: 0;
     padding: 0;
   } */
+
+  #emmett {
+    margin-top: 68px;
+  }
+  #will {
+    margin-top: 524px;
+  }
+  #front {
+    margin-top: 71px;
+  }
+  #joe {
+    margin-top: -92px;
+  }
 }
 
 @media (max-width: 800px) {
